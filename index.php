@@ -10,7 +10,7 @@ use Monolog\Logger;
 require __DIR__ . '/vendor/autoload.php';
 
 // Load .env variables
-$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv::createImmutable(__DIR__ . '/config');
 $dotenv->safeLoad();
 
 // Instantiate PHP-DI Container
